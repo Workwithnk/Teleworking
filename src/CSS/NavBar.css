@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.NavBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2ecc71;
+  box-shadow: 0px 0px 4px 0px;
+  position: sticky;
+  top: 0px;
+  padding: 3px 7px;
+  z-index: 999;
+}
+.firstPart_NavBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.firstPart_NavBar img {
+  width: 56px;
+  height: 56px;
+}
+
+.firstPart_NavBar h1 {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 3px;
+  margin-left: 10px;
+  color: white;
+}
+
+.navFollow_Icon {
+  border-radius: 15px;
+  padding: 6px 7px;
+  background-color: white;
+  color: #2ecc71;
+  cursor: pointer;
+  margin-bottom: -3px;
+}
+.navFollow_Icon:hover {
+  background-color: #ecf0f1;
+}
+
+/* search container */
+/* .searchContainer {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  background-color: white;
+  border-radius: 10px;
+  border: none;
+}
+.searchIconNav {
+  font-size: 30px;
+}
+.searchContainer input {
+  padding: 4px;
+  font-size: 15px;
+  border: none;
+   border-bottom: 1px solid black; 
+  outline: none;
+  background-color: none;
+} */
+
+@media only screen and (max-width: 430px) {
+  .firstPart_NavBar h1 {
+    font-size: 6.5vw;
+  }
+  .navFollow_Icon {
+    padding: 2px 2px;
+  }
+}
