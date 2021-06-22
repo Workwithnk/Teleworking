@@ -9,17 +9,9 @@ function NavBar() {
   return (
     <div className="NavBar">
       <div className="firstPart_NavBar">
-        {/* <img src={Logo} alt="logo" /> */}
         <h1>TELEWORKING</h1>
       </div>
-      {/* <div className="searchContainer">
-        <Search className="searchIconNav" />
-        <input
-          type="text"
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
-      </div> */}
+
       <div className="follow_Icon">
         <a href="https://iamnk.netlify.com">
           <AddAlertIcon className="navFollow_Icon" />

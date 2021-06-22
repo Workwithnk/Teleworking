@@ -11,7 +11,7 @@ const spinner = {
 function Loading() {
   return (
     <div style={spinner}>
-      <ScaleLoader width="10" color="#2ecc71" />
+      <ScaleLoader color="#2ecc71" />
     </div>
   );
 }
