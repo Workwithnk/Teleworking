@@ -5,7 +5,7 @@ const spinner = {
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  height: "100vh",
+  height: "80vh",
 };
 
 function Loading() {
