@@ -2,10 +2,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #2ecc71;
-  position: sticky;
-  top: 44px;
-  padding: 6px 0px;
+  position: fixed;
+  top: 8px;
+  left: 47%;
+  z-index: 80;
 }
 .selectTagLine {
   font-size: 30px;
@@ -21,8 +21,9 @@
   border: none;
   border-radius: 4px;
   background-color: white;
-  color: #2ecc71;
   font-weight: bolder;
+  color: #2ecc71;
+  width: 60%;
 }
 
 @media only screen and (max-width: 651px) {
@@ -30,6 +31,35 @@
     font-size: 4vw;
   }
   .selectCategory {
-    width: 25%;
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 495px) {
+  .firstPart_NavBar h1 {
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0px;
+    margin-left: 0px;
+    color: white;
+    font-size: 6vw;
+  }
+  .selectContainer {
+    left: 42%;
+    padding: 4px 0px;
+    top: 0%;
+  }
+  .navFollow_Icon {
+    border-radius: 15px;
+    padding: 1px 2px;
+  }
+}
+
+@media only screen and (max-width: 315px) {
+  .selectContainer {
+    left: 34%;
+    padding: 1px 0px;
+    top: 0.5%;
+  }
+  .selectCategory {
+    width: 40%;
   }
 }

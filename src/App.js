@@ -8,7 +8,7 @@ import Loading from "./Loading";
 function App() {
   const [jobs, setJobs] = useState([]);
   const [loading, setloading] = useState(true);
-  const [category, setCategory] = useState("Allothers");
+  const [category, setCategory] = useState("QA");
   const dataURL = `https://remotive.io/api/remote-jobs?category=${category}`;
   const AllJobs = async () => {
     let res = await fetch(`${dataURL}`);
@@ -28,7 +28,7 @@ function App() {
       <NavBar />
       <Footer />
       <div className="selectContainer">
-        <h3 className="selectTagLine">Categories your interest here..</h3>
+        {/* <h3 className="selectTagLine">Categories your interest here..</h3> */}
         <select className="selectCategory" onChange={handleSelect}>
           <option>QA</option>
           <option>Human Resources</option>
@@ -41,13 +41,13 @@ function App() {
           <option>Software Development</option>
           <option>Customer Service</option>
           <option>Product</option>
-          <option defult="true">All others</option>
+          <option>All others</option>
         </select>
       </div>
       {loading ? (
         <Loading />
       ) : (
-        <div>
+        <div style={{ paddingBottom: "50px" }}>
           {jobs.map((job) => {
             return (
               <Job

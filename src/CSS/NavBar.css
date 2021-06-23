@@ -9,7 +9,7 @@
   position: sticky;
   top: 0px;
   padding: 3px 7px;
-  z-index: 999;
+  z-index: 50;
 }
 .firstPart_NavBar {
   display: flex;
@@ -62,12 +62,3 @@
   outline: none;
   background-color: none;
 } */
-
-@media only screen and (max-width: 430px) {
-  .firstPart_NavBar h1 {
-    font-size: 6.5vw;
-  }
-  .navFollow_Icon {
-    padding: 2px 2px;
-  }
-}
